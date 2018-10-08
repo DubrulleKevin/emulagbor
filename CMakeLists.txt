@@ -15,11 +15,28 @@ endif()
 include_directories("inc")
 
 file(
-        GLOB_RECURSE
-        source_files
-        src/*.c
+  GLOB_RECURSE
+  EMULAGBOR_SOURCES_FILES
+  src/*.c
+)
+
+file(
+  GLOB_RECURSE
+  EMULAGBOR_EXE_SOURCES_FILES
+  exe/*.c
+)
+
+file(
+  GLOB_RECURSE
+  TEST_SOURCES_FILES
+  tests/*.c
 )
 
 # Define sources and executable
 set(EXECUTABLE_NAME "emulagbor")
-add_executable(${EXECUTABLE_NAME} ${source_files})
+add_executable(${EXECUTABLE_NAME} ${EMULAGBOR_SOURCES_FILES} ${EMULAGBOR_EXE_SOURCES_FILES})
+
+foreach(FILE ${TEST_SOURCES_FILES})
+  string(REGEX REPLACE "(^.*/|\\.[^.]*$)" "" FILE_WITHOUT_EXTENSION ${FILE})
+  add_executable(${FILE_WITHOUT_EXTENSION} ${FILE} ${EMULAGBOR_SOURCES_FILES})
+endforeach()

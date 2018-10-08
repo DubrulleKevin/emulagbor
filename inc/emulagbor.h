@@ -2,6 +2,7 @@
 #define HEADER_EMULAGBOR
 
 
+#include <stdlib.h>
 #include <limits.h>
 #include <string.h> /* For memset */
 
@@ -41,9 +42,9 @@
     #error No 32 bits integer type for this platform
 #endif
 
-typedef u_int_8_t register_8_t;
-typedef union register_16_t register_16_t;
+
 typedef struct cpu_t cpu_t;
+typedef union register_16_t register_16_t;
 typedef struct cpu_opcode_t cpu_opcode_t;
 typedef struct cpu_opcodes_t cpu_opcodes_t;
 typedef struct cpu_registers_t cpu_registers_t;
@@ -59,13 +60,8 @@ union register_16_t
 {
     struct
     {
-#ifdef __LITTLEENDIAN__
-        u_int_8_t l;
-        u_int_8_t h;
-#else
         u_int_8_t h;
         u_int_8_t l;
-#endif
     } hl;
 
     u_int_16_t v;
@@ -102,34 +98,34 @@ struct cpu_t
 
 
 void cpu_setup(cpu_t *cpu);
-register_16_t cpu_registers_get_sp(cpu_t *cpu);
-void cpu_registers_set_sp(cpu_t *cpu, register_16_t v);
-register_16_t cpu_registers_get_pc(cpu_t *cpu);
-void cpu_registers_set_pc(cpu_t *cpu, register_16_t v);
-register_16_t cpu_registers_get_af(cpu_t *cpu);
-void cpu_registers_set_af(cpu_t *cpu, register_16_t v);
-register_16_t cpu_registers_get_bc(cpu_t *cpu);
-void cpu_registers_set_bc(cpu_t *cpu, register_16_t v);
-register_16_t cpu_registers_get_de(cpu_t *cpu);
-void cpu_registers_set_de(cpu_t *cpu, register_16_t v);
-register_16_t cpu_registers_get_hl(cpu_t *cpu);
-void cpu_registers_set_lh(cpu_t *cpu, register_16_t v);
-register_8_t cpu_registers_get_a(cpu_t *cpu);
-void cpu_registers_set_a(cpu_t *cpu, register_8_t v);
-register_8_t cpu_registers_get_f(cpu_t *cpu);
-void cpu_registers_set_f(cpu_t *cpu, register_8_t v);
-register_8_t cpu_registers_get_b(cpu_t *cpu);
-void cpu_registers_set_b(cpu_t *cpu, register_8_t v);
-register_8_t cpu_registers_get_c(cpu_t *cpu);
-void cpu_registers_set_c(cpu_t *cpu, register_8_t v);
-register_8_t cpu_registers_get_d(cpu_t *cpu);
-void cpu_registers_set_d(cpu_t *cpu, register_8_t v);
-register_8_t cpu_registers_get_e(cpu_t *cpu);
-void cpu_registers_set_e(cpu_t *cpu, register_8_t v);
-register_8_t cpu_registers_get_h(cpu_t *cpu);
-void cpu_registers_set_h(cpu_t *cpu, register_8_t v);
-register_8_t cpu_registers_get_l(cpu_t *cpu);
-void cpu_registers_set_l(cpu_t *cpu, register_8_t v);
+u_int_16_t cpu_registers_get_sp(cpu_t *cpu);
+void cpu_registers_set_sp(cpu_t *cpu, u_int_16_t v);
+u_int_16_t cpu_registers_get_pc(cpu_t *cpu);
+void cpu_registers_set_pc(cpu_t *cpu, u_int_16_t v);
+u_int_16_t cpu_registers_get_af(cpu_t *cpu);
+void cpu_registers_set_af(cpu_t *cpu, u_int_16_t v);
+u_int_16_t cpu_registers_get_bc(cpu_t *cpu);
+void cpu_registers_set_bc(cpu_t *cpu, u_int_16_t v);
+u_int_16_t cpu_registers_get_de(cpu_t *cpu);
+void cpu_registers_set_de(cpu_t *cpu, u_int_16_t v);
+u_int_16_t cpu_registers_get_hl(cpu_t *cpu);
+void cpu_registers_set_hl(cpu_t *cpu, u_int_16_t v);
+u_int_8_t cpu_registers_get_a(cpu_t *cpu);
+void cpu_registers_set_a(cpu_t *cpu, u_int_8_t v);
+u_int_8_t cpu_registers_get_f(cpu_t *cpu);
+void cpu_registers_set_f(cpu_t *cpu, u_int_8_t v);
+u_int_8_t cpu_registers_get_b(cpu_t *cpu);
+void cpu_registers_set_b(cpu_t *cpu, u_int_8_t v);
+u_int_8_t cpu_registers_get_c(cpu_t *cpu);
+void cpu_registers_set_c(cpu_t *cpu, u_int_8_t v);
+u_int_8_t cpu_registers_get_d(cpu_t *cpu);
+void cpu_registers_set_d(cpu_t *cpu, u_int_8_t v);
+u_int_8_t cpu_registers_get_e(cpu_t *cpu);
+void cpu_registers_set_e(cpu_t *cpu, u_int_8_t v);
+u_int_8_t cpu_registers_get_h(cpu_t *cpu);
+void cpu_registers_set_h(cpu_t *cpu, u_int_8_t v);
+u_int_8_t cpu_registers_get_l(cpu_t *cpu);
+void cpu_registers_set_l(cpu_t *cpu, u_int_8_t v);
 
 void cpu_opcodes_setup(cpu_opcodes_t *opcodes);
 
