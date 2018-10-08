@@ -39,7 +39,14 @@
     typedef unsigned long u_int_32_t;
 #else
     #error No 32 bits integer type for this platform
-#endif 
+#endif
+
+typedef u_int_8_t register_8_t;
+typedef union register_16_t register_16_t;
+typedef struct cpu_t cpu_t;
+typedef struct cpu_opcode_t cpu_opcode_t;
+typedef struct cpu_opcodes_t cpu_opcodes_t;
+typedef struct cpu_registers_t cpu_registers_t;
 
 typedef enum bit_t
 {
@@ -48,9 +55,7 @@ typedef enum bit_t
     UNTOUCHED
 } bit_t;
 
-typedef u_int_8_t register_8_t;
-
-typedef union register_16_t
+union register_16_t
 {
     struct
     {
@@ -64,11 +69,7 @@ typedef union register_16_t
     } hl;
 
     u_int_16_t v;
-} register_16_t;
-
-typedef struct cpu_t cpu_t;
-typedef struct cpu_opcode_t cpu_opcode_t;
-typedef struct cpu_opcodes_t cpu_opcodes_t;
+};
 
 struct cpu_opcode_t
 {
@@ -85,10 +86,15 @@ struct cpu_opcodes_t
     cpu_opcode_t cb_opcodes[0x100];
 };
 
+struct cpu_registers_t
+{
+    register_16_t sp, pc, af, bc, de, hl;
+};
+
 struct cpu_t
 {
     cpu_opcodes_t opcodes;
-    register_16_t sp, pc, af, bc, de, hl;
+    cpu_registers_t registers;
 };
 
 
