@@ -1,7 +1,6 @@
 #include <stdlib.h>
-#include <stdio.h>
 
-#include "cpu.h"
+#include "emulagbor.h"
 
 
 int main(void)

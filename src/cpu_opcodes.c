@@ -1,2507 +1,2507 @@
-#include "cpu_opcodes.h"
+#include "emulagbor.h"
 
 
-static void opcode_up_0x0_NOP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x0_NOP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x1_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x1_LD(cpu_t *c, void *m, void *a)
 {
-
+    
 }
 
-static void opcode_up_0x2_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x2_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x3_INC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x3_INC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x4_INC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x4_INC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x5_DEC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x5_DEC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x6_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x6_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x7_RLCA(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x7_RLCA(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x8_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x8_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x9_ADD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x9_ADD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xa_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xa_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xb_DEC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xb_DEC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xc_INC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xc_INC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xd_DEC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xd_DEC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xe_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xe_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xf_RRCA(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xf_RRCA(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x10_STOP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x10_STOP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x11_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x11_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x12_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x12_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x13_INC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x13_INC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x14_INC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x14_INC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x15_DEC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x15_DEC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x16_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x16_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x17_RLA(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x17_RLA(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x18_JR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x18_JR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x19_ADD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x19_ADD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x1a_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x1a_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x1b_DEC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x1b_DEC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x1c_INC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x1c_INC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x1d_DEC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x1d_DEC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x1e_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x1e_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x1f_RRA(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x1f_RRA(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x20_JR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x20_JR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x21_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x21_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x22_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x22_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x23_INC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x23_INC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x24_INC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x24_INC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x25_DEC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x25_DEC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x26_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x26_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x27_DAA(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x27_DAA(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x28_JR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x28_JR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x29_ADD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x29_ADD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x2a_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x2a_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x2b_DEC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x2b_DEC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x2c_INC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x2c_INC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x2d_DEC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x2d_DEC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x2e_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x2e_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x2f_CPL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x2f_CPL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x30_JR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x30_JR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x31_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x31_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x32_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x32_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x33_INC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x33_INC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x34_INC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x34_INC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x35_DEC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x35_DEC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x36_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x36_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x37_SCF(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x37_SCF(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x38_JR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x38_JR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x39_ADD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x39_ADD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x3a_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x3a_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x3b_DEC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x3b_DEC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x3c_INC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x3c_INC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x3d_DEC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x3d_DEC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x3e_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x3e_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x3f_CCF(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x3f_CCF(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x40_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x40_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x41_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x41_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x42_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x42_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x43_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x43_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x44_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x44_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x45_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x45_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x46_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x46_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x47_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x47_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x48_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x48_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x49_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x49_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x4a_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x4a_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x4b_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x4b_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x4c_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x4c_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x4d_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x4d_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x4e_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x4e_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x4f_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x4f_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x50_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x50_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x51_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x51_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x52_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x52_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x53_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x53_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x54_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x54_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x55_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x55_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x56_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x56_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x57_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x57_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x58_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x58_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x59_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x59_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x5a_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x5a_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x5b_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x5b_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x5c_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x5c_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x5d_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x5d_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x5e_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x5e_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x5f_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x5f_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x60_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x60_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x61_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x61_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x62_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x62_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x63_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x63_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x64_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x64_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x65_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x65_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x66_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x66_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x67_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x67_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x68_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x68_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x69_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x69_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x6a_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x6a_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x6b_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x6b_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x6c_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x6c_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x6d_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x6d_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x6e_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x6e_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x6f_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x6f_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x70_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x70_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x71_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x71_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x72_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x72_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x73_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x73_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x74_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x74_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x75_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x75_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x76_HALT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x76_HALT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x77_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x77_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x78_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x78_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x79_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x79_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x7a_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x7a_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x7b_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x7b_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x7c_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x7c_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x7d_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x7d_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x7e_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x7e_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x7f_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x7f_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x80_ADD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x80_ADD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x81_ADD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x81_ADD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x82_ADD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x82_ADD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x83_ADD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x83_ADD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x84_ADD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x84_ADD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x85_ADD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x85_ADD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x86_ADD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x86_ADD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x87_ADD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x87_ADD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x88_ADC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x88_ADC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x89_ADC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x89_ADC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x8a_ADC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x8a_ADC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x8b_ADC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x8b_ADC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x8c_ADC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x8c_ADC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x8d_ADC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x8d_ADC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x8e_ADC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x8e_ADC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x8f_ADC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x8f_ADC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x90_SUB(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x90_SUB(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x91_SUB(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x91_SUB(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x92_SUB(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x92_SUB(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x93_SUB(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x93_SUB(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x94_SUB(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x94_SUB(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x95_SUB(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x95_SUB(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x96_SUB(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x96_SUB(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x97_SUB(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x97_SUB(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x98_SBC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x98_SBC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x99_SBC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x99_SBC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x9a_SBC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x9a_SBC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x9b_SBC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x9b_SBC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x9c_SBC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x9c_SBC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x9d_SBC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x9d_SBC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x9e_SBC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x9e_SBC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0x9f_SBC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0x9f_SBC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xa0_AND(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xa0_AND(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xa1_AND(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xa1_AND(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xa2_AND(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xa2_AND(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xa3_AND(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xa3_AND(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xa4_AND(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xa4_AND(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xa5_AND(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xa5_AND(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xa6_AND(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xa6_AND(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xa7_AND(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xa7_AND(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xa8_XOR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xa8_XOR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xa9_XOR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xa9_XOR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xaa_XOR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xaa_XOR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xab_XOR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xab_XOR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xac_XOR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xac_XOR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xad_XOR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xad_XOR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xae_XOR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xae_XOR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xaf_XOR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xaf_XOR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xb0_OR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xb0_OR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xb1_OR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xb1_OR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xb2_OR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xb2_OR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xb3_OR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xb3_OR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xb4_OR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xb4_OR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xb5_OR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xb5_OR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xb6_OR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xb6_OR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xb7_OR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xb7_OR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xb8_CP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xb8_CP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xb9_CP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xb9_CP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xba_CP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xba_CP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xbb_CP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xbb_CP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xbc_CP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xbc_CP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xbd_CP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xbd_CP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xbe_CP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xbe_CP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xbf_CP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xbf_CP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xc0_RET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xc0_RET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xc1_POP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xc1_POP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xc2_JP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xc2_JP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xc3_JP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xc3_JP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xc4_CALL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xc4_CALL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xc5_PUSH(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xc5_PUSH(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xc6_ADD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xc6_ADD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xc7_RST(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xc7_RST(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xc8_RET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xc8_RET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xc9_RET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xc9_RET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xca_JP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xca_JP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xcb_PREFIX(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xcb_PREFIX(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xcc_CALL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xcc_CALL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xcd_CALL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xcd_CALL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xce_ADC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xce_ADC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xcf_RST(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xcf_RST(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xd0_RET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xd0_RET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xd1_POP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xd1_POP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xd2_JP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xd2_JP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xd4_CALL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xd4_CALL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xd5_PUSH(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xd5_PUSH(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xd6_SUB(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xd6_SUB(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xd7_RST(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xd7_RST(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xd8_RET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xd8_RET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xd9_RETI(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xd9_RETI(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xda_JP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xda_JP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xdc_CALL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xdc_CALL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xde_SBC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xde_SBC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xdf_RST(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xdf_RST(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xe0_LDH(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xe0_LDH(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xe1_POP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xe1_POP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xe2_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xe2_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xe5_PUSH(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xe5_PUSH(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xe6_AND(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xe6_AND(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xe7_RST(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xe7_RST(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xe8_ADD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xe8_ADD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xe9_JP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xe9_JP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xea_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xea_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xee_XOR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xee_XOR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xef_RST(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xef_RST(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xf0_LDH(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xf0_LDH(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xf1_POP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xf1_POP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xf2_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xf2_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xf3_DI(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xf3_DI(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xf5_PUSH(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xf5_PUSH(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xf6_OR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xf6_OR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xf7_RST(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xf7_RST(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xf8_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xf8_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xf9_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xf9_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xfa_LD(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xfa_LD(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xfb_EI(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xfb_EI(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xfe_CP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xfe_CP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_up_0xff_RST(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_up_0xff_RST(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x0_RLC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x0_RLC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x1_RLC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x1_RLC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x2_RLC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x2_RLC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x3_RLC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x3_RLC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x4_RLC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x4_RLC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x5_RLC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x5_RLC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x6_RLC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x6_RLC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x7_RLC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x7_RLC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x8_RRC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x8_RRC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x9_RRC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x9_RRC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xa_RRC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xa_RRC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xb_RRC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xb_RRC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xc_RRC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xc_RRC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xd_RRC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xd_RRC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xe_RRC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xe_RRC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xf_RRC(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xf_RRC(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x10_RL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x10_RL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x11_RL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x11_RL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x12_RL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x12_RL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x13_RL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x13_RL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x14_RL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x14_RL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x15_RL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x15_RL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x16_RL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x16_RL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x17_RL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x17_RL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x18_RR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x18_RR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x19_RR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x19_RR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x1a_RR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x1a_RR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x1b_RR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x1b_RR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x1c_RR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x1c_RR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x1d_RR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x1d_RR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x1e_RR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x1e_RR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x1f_RR(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x1f_RR(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x20_SLA(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x20_SLA(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x21_SLA(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x21_SLA(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x22_SLA(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x22_SLA(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x23_SLA(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x23_SLA(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x24_SLA(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x24_SLA(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x25_SLA(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x25_SLA(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x26_SLA(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x26_SLA(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x27_SLA(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x27_SLA(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x28_SRA(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x28_SRA(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x29_SRA(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x29_SRA(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x2a_SRA(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x2a_SRA(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x2b_SRA(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x2b_SRA(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x2c_SRA(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x2c_SRA(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x2d_SRA(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x2d_SRA(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x2e_SRA(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x2e_SRA(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x2f_SRA(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x2f_SRA(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x30_SWAP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x30_SWAP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x31_SWAP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x31_SWAP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x32_SWAP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x32_SWAP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x33_SWAP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x33_SWAP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x34_SWAP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x34_SWAP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x35_SWAP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x35_SWAP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x36_SWAP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x36_SWAP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x37_SWAP(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x37_SWAP(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x38_SRL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x38_SRL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x39_SRL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x39_SRL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x3a_SRL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x3a_SRL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x3b_SRL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x3b_SRL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x3c_SRL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x3c_SRL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x3d_SRL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x3d_SRL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x3e_SRL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x3e_SRL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x3f_SRL(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x3f_SRL(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x40_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x40_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x41_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x41_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x42_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x42_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x43_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x43_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x44_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x44_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x45_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x45_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x46_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x46_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x47_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x47_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x48_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x48_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x49_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x49_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x4a_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x4a_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x4b_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x4b_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x4c_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x4c_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x4d_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x4d_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x4e_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x4e_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x4f_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x4f_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x50_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x50_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x51_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x51_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x52_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x52_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x53_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x53_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x54_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x54_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x55_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x55_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x56_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x56_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x57_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x57_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x58_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x58_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x59_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x59_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x5a_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x5a_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x5b_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x5b_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x5c_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x5c_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x5d_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x5d_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x5e_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x5e_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x5f_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x5f_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x60_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x60_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x61_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x61_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x62_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x62_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x63_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x63_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x64_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x64_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x65_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x65_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x66_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x66_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x67_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x67_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x68_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x68_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x69_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x69_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x6a_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x6a_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x6b_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x6b_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x6c_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x6c_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x6d_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x6d_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x6e_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x6e_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x6f_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x6f_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x70_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x70_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x71_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x71_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x72_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x72_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x73_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x73_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x74_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x74_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x75_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x75_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x76_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x76_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x77_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x77_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x78_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x78_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x79_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x79_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x7a_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x7a_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x7b_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x7b_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x7c_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x7c_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x7d_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x7d_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x7e_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x7e_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x7f_BIT(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x7f_BIT(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x80_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x80_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x81_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x81_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x82_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x82_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x83_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x83_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x84_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x84_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x85_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x85_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x86_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x86_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x87_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x87_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x88_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x88_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x89_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x89_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x8a_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x8a_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x8b_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x8b_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x8c_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x8c_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x8d_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x8d_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x8e_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x8e_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x8f_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x8f_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x90_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x90_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x91_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x91_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x92_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x92_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x93_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x93_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x94_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x94_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x95_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x95_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x96_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x96_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x97_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x97_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x98_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x98_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x99_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x99_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x9a_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x9a_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x9b_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x9b_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x9c_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x9c_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x9d_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x9d_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x9e_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x9e_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0x9f_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0x9f_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xa0_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xa0_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xa1_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xa1_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xa2_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xa2_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xa3_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xa3_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xa4_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xa4_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xa5_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xa5_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xa6_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xa6_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xa7_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xa7_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xa8_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xa8_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xa9_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xa9_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xaa_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xaa_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xab_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xab_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xac_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xac_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xad_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xad_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xae_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xae_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xaf_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xaf_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xb0_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xb0_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xb1_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xb1_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xb2_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xb2_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xb3_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xb3_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xb4_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xb4_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xb5_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xb5_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xb6_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xb6_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xb7_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xb7_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xb8_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xb8_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xb9_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xb9_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xba_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xba_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xbb_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xbb_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xbc_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xbc_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xbd_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xbd_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xbe_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xbe_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xbf_RES(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xbf_RES(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xc0_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xc0_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xc1_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xc1_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xc2_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xc2_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xc3_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xc3_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xc4_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xc4_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xc5_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xc5_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xc6_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xc6_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xc7_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xc7_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xc8_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xc8_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xc9_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xc9_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xca_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xca_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xcb_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xcb_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xcc_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xcc_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xcd_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xcd_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xce_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xce_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xcf_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xcf_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xd0_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xd0_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xd1_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xd1_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xd2_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xd2_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xd3_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xd3_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xd4_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xd4_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xd5_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xd5_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xd6_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xd6_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xd7_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xd7_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xd8_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xd8_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xd9_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xd9_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xda_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xda_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xdb_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xdb_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xdc_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xdc_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xdd_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xdd_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xde_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xde_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xdf_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xdf_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xe0_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xe0_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xe1_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xe1_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xe2_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xe2_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xe3_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xe3_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xe4_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xe4_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xe5_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xe5_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xe6_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xe6_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xe7_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xe7_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xe8_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xe8_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xe9_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xe9_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xea_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xea_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xeb_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xeb_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xec_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xec_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xed_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xed_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xee_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xee_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xef_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xef_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xf0_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xf0_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xf1_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xf1_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xf2_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xf2_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xf3_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xf3_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xf4_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xf4_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xf5_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xf5_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xf6_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xf6_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xf7_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xf7_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xf8_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xf8_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xf9_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xf9_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xfa_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xfa_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xfb_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xfb_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xfc_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xfc_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xfd_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xfd_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xfe_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xfe_SET(cpu_t *c, void *m, void *a)
 {
 
 }
 
-static void opcode_cb_0xff_SET(cpu_registers_t *registers, void *memory, void *arguments)
+static void opcode_cb_0xff_SET(cpu_t *c, void *m, void *a)
 {
 
 }
