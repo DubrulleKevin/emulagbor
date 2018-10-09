@@ -43,18 +43,18 @@
 #endif
 
 
+typedef struct gb_t gb_t;
 typedef struct cpu_t cpu_t;
 typedef union register_16_t register_16_t;
 typedef struct cpu_opcode_t cpu_opcode_t;
 typedef struct cpu_opcodes_t cpu_opcodes_t;
 typedef struct cpu_registers_t cpu_registers_t;
 
-typedef enum bit_t
+typedef enum bool_t
 {
-    ZERO,
-    ONE,
-    UNTOUCHED
-} bit_t;
+    TRUE,
+    FALSE
+} bool_t;
 
 union register_16_t
 {
@@ -70,16 +70,15 @@ union register_16_t
 struct cpu_opcode_t
 {
     const char *mnemonic;
-    void(*func)(cpu_t *c, void *m, void *a);
-    u_int_8_t length;
+    void(*func)(cpu_t *c, u_int_8_t *m, u_int_8_t *a);
     u_int_8_t cycles[2];
-    bit_t flag_z, flag_n, flag_h, flag_c;
+    u_int_8_t length;
 };
 
 struct cpu_opcodes_t
 {
-    cpu_opcode_t up_opcodes[0x100];
-    cpu_opcode_t cb_opcodes[0x100];
+    cpu_opcode_t up[0x100];
+    cpu_opcode_t cb[0x100];
 };
 
 struct cpu_registers_t
@@ -91,6 +90,12 @@ struct cpu_t
 {
     cpu_opcodes_t opcodes;
     cpu_registers_t registers;
+};
+
+struct gb_t
+{
+    u_int_8_t memory[0x10000];
+    cpu_t cpu;
 };
 
 
@@ -129,14 +134,20 @@ void cpu_registers_set_l(cpu_t *cpu, u_int_8_t v);
 
 void cpu_opcodes_setup(cpu_opcodes_t *opcodes);
 
-void cpu_flags_set_z(cpu_t *c, bit_t b);
-bit_t cpu_flags_get_z(cpu_t *cpu);
-void cpu_flags_set_n(cpu_t *c, bit_t b);
-bit_t cpu_flags_get_n(cpu_t *cpu);
-void cpu_flags_set_h(cpu_t *c, bit_t b);
-bit_t cpu_flags_get_h(cpu_t *cpu);
-void cpu_flags_set_c(cpu_t *c, bit_t b);
-bit_t cpu_flags_get_c(cpu_t *cpu);
+void cpu_flags_set_z(cpu_t *c, bool_t b);
+bool_t cpu_flags_get_z(cpu_t *cpu);
+void cpu_flags_set_n(cpu_t *c, bool_t b);
+bool_t cpu_flags_get_n(cpu_t *cpu);
+void cpu_flags_set_h(cpu_t *c, bool_t b);
+bool_t cpu_flags_get_h(cpu_t *cpu);
+void cpu_flags_set_c(cpu_t *c, bool_t b);
+bool_t cpu_flags_get_c(cpu_t *cpu);
+
+u_int_16_t bits_utils_2_bytes_array_to_word(u_int_8_t *a);
+
+void gb_setup(gb_t *gb);
+void gb_run_up_opcode(gb_t *gb, u_int_8_t opcode, u_int_8_t *a);
+void gb_run_cb_opcode(gb_t *gb, u_int_8_t opcode, u_int_8_t *a);
 
 
 #endif
