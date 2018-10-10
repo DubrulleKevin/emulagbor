@@ -6,10 +6,10 @@
 int main(void)
 {
     cpu_t cpu;
+    
 
     /* Test C */
     cpu_setup(&cpu);
-
     cpu_flags_set_c(&cpu, TRUE);
     assert(cpu_flags_get_c(&cpu) == TRUE);
     assert(cpu_flags_get_h(&cpu) == FALSE);
@@ -18,7 +18,6 @@ int main(void)
 
     /* Test H */
     cpu_setup(&cpu);
-
     cpu_flags_set_h(&cpu, TRUE);
     assert(cpu_flags_get_h(&cpu) == TRUE);
     assert(cpu_flags_get_c(&cpu) == FALSE);
@@ -27,7 +26,6 @@ int main(void)
 
     /* Test N */
     cpu_setup(&cpu);
-
     cpu_flags_set_n(&cpu, TRUE);
     assert(cpu_flags_get_n(&cpu) == TRUE);
     assert(cpu_flags_get_h(&cpu) == FALSE);
@@ -36,12 +34,19 @@ int main(void)
 
     /* Test Z */
     cpu_setup(&cpu);
-
     cpu_flags_set_z(&cpu, TRUE);
     assert(cpu_flags_get_z(&cpu) == TRUE);
     assert(cpu_flags_get_h(&cpu) == FALSE);
     assert(cpu_flags_get_n(&cpu) == FALSE);
     assert(cpu_flags_get_c(&cpu) == FALSE);
+
+    /* Test set 1 and after 0 on same flag */
+    cpu_setup(&cpu);
+    cpu_flags_set_h(&cpu, TRUE);
+    assert(cpu_flags_get_h(&cpu) == TRUE);
+    cpu_flags_set_h(&cpu, FALSE);
+    assert(cpu_flags_get_h(&cpu) == FALSE);
+
 
     return EXIT_SUCCESS;
 }

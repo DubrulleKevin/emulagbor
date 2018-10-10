@@ -19,25 +19,26 @@ static void opcode_up_0x2_LD(cpu_t *c, u_int_8_t *m, u_int_8_t *a)
 static void opcode_up_0x3_INC(cpu_t *c, u_int_8_t *m, u_int_8_t *a)
 {
     u_int_16_t rbc = cpu_registers_get_bc(c);
-    rbc == 0xffff ? (rbc = 0) : (rbc += 1);
+    rbc == 0xffff ? (rbc = 0x0000) : (rbc += 0x0001);
     cpu_registers_set_bc(c, rbc);
 }
 
 static void opcode_up_0x4_INC(cpu_t *c, u_int_8_t *m, u_int_8_t *a)
 {
     u_int_8_t rb = cpu_registers_get_b(c);
-    rb == 0xff ? (rb = 0) : (rb += 1);
-    cpu_flags_set_z(c, rb == 0);
-    cpu_flags_set_h(c, (rb & 0xf) == 0xf);
+    rb == 0xff ? (rb = 0x00) : (rb += 0x01);
+    cpu_flags_set_z(c, rb == 0x00);
+    cpu_flags_set_h(c, (rb & 0x10) == 0x10);
+    cpu_flags_set_n(c, FALSE);
     cpu_registers_set_b(c, rb);
 }
 
 static void opcode_up_0x5_DEC(cpu_t *c, u_int_8_t *m, u_int_8_t *a)
 {
     u_int_8_t rb = cpu_registers_get_b(c);
-    rb == 0 ? (rb = 0xff) : (rb -= 1);
-    cpu_flags_set_z(c, rb == 0);
-    cpu_flags_set_h(c, (rb & 0xf) == 0);
+    rb == 0x00 ? (rb = 0xff) : (rb -= 0x01);
+    cpu_flags_set_z(c, rb == 0x00);
+    cpu_flags_set_h(c, (rb & 0x0f) == 0x0f);
     cpu_flags_set_n(c, TRUE);
     cpu_registers_set_b(c, rb);
 }
@@ -51,7 +52,7 @@ static void opcode_up_0x7_RLCA(cpu_t *c, u_int_8_t *m, u_int_8_t *a)
 {
     u_int_8_t ra = cpu_registers_get_a(c);
     u_int_8_t fc = ra >> 7;
-    cpu_flags_set_c(c, fc != 0);
+    cpu_flags_set_c(c, fc != 0x00);
     cpu_flags_set_z(c, FALSE);
     cpu_flags_set_h(c, FALSE);
     cpu_flags_set_n(c, FALSE);
@@ -60,12 +61,22 @@ static void opcode_up_0x7_RLCA(cpu_t *c, u_int_8_t *m, u_int_8_t *a)
 
 static void opcode_up_0x8_LD(cpu_t *c, u_int_8_t *m, u_int_8_t *a)
 {
-
+    u_int_16_t addr = bits_utils_2_bytes_array_to_word(a);
+    u_int_16_t rsp = cpu_registers_get_sp(c);
+    m[addr] = bits_utils_get_lsb_from_word(rsp);
+    m[addr + 0x0001] = bits_utils_get_msb_from_word(rsp);
 }
 
 static void opcode_up_0x9_ADD(cpu_t *c, u_int_8_t *m, u_int_8_t *a)
 {
+    u_int_32_t rhl = (u_int_32_t)cpu_registers_get_hl(c);
+    u_int_32_t rbc = (u_int_32_t)cpu_registers_get_bc(c);
 
+    u_int_32_t add = rhl + rbc;
+    cpu_flags_set_c(c, (add & 0x00010000) == 0x00010000);
+    cpu_flags_set_h(c, ((rhl & 0x00000fff) + (rbc & 0x00000fff)) >= 0x00001000);
+    cpu_flags_set_n(c, FALSE);
+    cpu_registers_set_hl(c, (u_int_16_t)add);
 }
 
 static void opcode_up_0xa_LD(cpu_t *c, u_int_8_t *m, u_int_8_t *a)

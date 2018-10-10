@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <limits.h>
 #include <string.h> /* For memset */
+#include <stdio.h>
 
 
 /* TYPES */
@@ -52,8 +53,8 @@ typedef struct cpu_registers_t cpu_registers_t;
 
 typedef enum bool_t
 {
-    TRUE,
-    FALSE
+    FALSE,
+    TRUE
 } bool_t;
 
 union register_16_t
@@ -142,8 +143,11 @@ void cpu_flags_set_h(cpu_t *c, bool_t b);
 bool_t cpu_flags_get_h(cpu_t *cpu);
 void cpu_flags_set_c(cpu_t *c, bool_t b);
 bool_t cpu_flags_get_c(cpu_t *cpu);
+bool_t cpu_flags_are(cpu_t *cpu, bool_t z, bool_t n, bool_t h, bool_t c);
 
 u_int_16_t bits_utils_2_bytes_array_to_word(u_int_8_t *a);
+u_int_8_t bits_utils_get_msb_from_word(u_int_16_t w);
+u_int_8_t bits_utils_get_lsb_from_word(u_int_16_t w);
 
 void gb_setup(gb_t *gb);
 void gb_run_up_opcode(gb_t *gb, u_int_8_t opcode, u_int_8_t *a);
