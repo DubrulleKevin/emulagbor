@@ -117,6 +117,13 @@ int main(void)
     assert(cpu_flags_get_h(cpu) == TRUE);
     assert(cpu_flags_get_n(cpu) == FALSE);
 
+    /* Test up_0x0A */
+    gb_setup(&gb);
+    gb.memory[0x5555] = 0x77;
+    cpu_registers_set_bc(cpu, 0x5555);
+    gb_run_up_opcode(&gb, 0x0a, NULL);
+    assert(cpu_registers_get_a(cpu) == 0x77);
+
 
     return EXIT_SUCCESS;
 }

@@ -81,7 +81,8 @@ static void opcode_up_0x9_ADD(cpu_t *c, u_int_8_t *m, u_int_8_t *a)
 
 static void opcode_up_0xa_LD(cpu_t *c, u_int_8_t *m, u_int_8_t *a)
 {
-
+    u_int_16_t addr = cpu_registers_get_bc(c);
+    cpu_registers_set_a(c, m[addr]);
 }
 
 static void opcode_up_0xb_DEC(cpu_t *c, u_int_8_t *m, u_int_8_t *a)
